@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>MUSIC</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <main class="playlist">
+        <header class="playlist__header">
+          <i class="fas fa-arrow-left"></i>
+          <i class="fas fa-search"></i>
+        </header>
+        <section class="playlist__album">
+          <img
+            src="https://img7.yna.co.kr/etc/inner/KR/2019/06/21/AKR20190621075600005_01_i_P2.jpg"
+            class="playlist__main-cover"
+          />
+          <h1 class="title">AHN YE EUN</h1>
+          <h4 class="subtitle">Pop rock, ballad</h4>
+          <div class="playlist__func">
+            <button class="playlist__album-btn">Shuffle</button>
+            <button class="playlist__album-btn">
+              <i class="fas fa-heart"></i>
+              <span>200,000</span>
+            </button>
+          </div>
+        </section>
+        <section class="playlist__list-section">
+          <ul class="playlist__list">
+            <li class="playlist__list-items">
+              <div class="playlist__list-items-column">
+                <img
+                  src="http://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/970/747/81970747_1617334090444_1_600x600.JPG"
+                  class="playlist__item-cover"
+                />
+                <div class="playlist__item-text">
+                  <h5 class="playlist__item-subtitle">AHN YE EUN</h5>
+                  <h2 class="playlist__item-title">Beginning</h2>
+                </div>
+              </div>
+              <i class="fas fa-ellipsis-v playlist__item-menu"></i>
+            </li>
+            <li class="playlist__list-items playlist__list-items-selected">
+              <div class="playlist__list-items-column">
+                <div class="equalizer">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <img
+                  src="http://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/970/747/81970747_1617334090444_1_600x600.JPG"
+                  class="playlist__item-cover"
+                />
+                <div class="playlist__item-text">
+                  <h5 class="playlist__item-subtitle">AHN YE EUN</h5>
+                  <h2 class="playlist__item-title">Sailing</h2>
+                </div>
+              </div>
+              <i class="fas fa-ellipsis-v playlist__item-menu"></i>
+            </li>
+            <li class="playlist__list-items">
+              <div class="playlist__list-items-column">
+                <img
+                  src="http://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/970/747/81970747_1617334090444_1_600x600.JPG"
+                  class="playlist__item-cover"
+                />
+                <div class="playlist__item-text">
+                  <h5 class="playlist__item-subtitle">AHN YE EUN</h5>
+                  <h2 class="playlist__item-title">Voyage</h2>
+                </div>
+              </div>
+              <i class="fas fa-ellipsis-v playlist__item-menu"></i>
+            </li>
+            <li class="playlist__list-items">
+              <div class="playlist__list-items-column">
+                <img
+                  src="http://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/970/747/81970747_1617334090444_1_600x600.JPG"
+                  class="playlist__item-cover"
+                />
+                <div class="playlist__item-text">
+                  <h5 class="playlist__item-subtitle">AHN YE EUN</h5>
+                  <h2 class="playlist__item-title">Shipwreck</h2>
+                </div>
+              </div>
+              <i class="fas fa-ellipsis-v playlist__item-menu"></i>
+            </li>
+          </ul>
+        </section>
+        <section class="playlist__now-playing">
+          <div class="playlist__item-text">
+            <h5 class="playlist__item-subtitle">AHN YE EUN</h5>
+            <h2 class="playlist__item-title">Sailing</h2>
+          </div>
+          <div class="playlist__play-btns">
+            <i class="fas fa-step-backward"></i>
+            <i class="fas fa-pause"></i>
+            <i class="fas fa-step-forward"></i>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="wrapper">
+      <main class="player">
+        <header class="player__header">
+          <i class="fas fa-arrow-left"></i>
+          <i class="fas fa-ellipsis-v"></i>
+        </header>
+        <section class="player__music-info">
+          <img
+            src="http://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/970/747/81970747_1617334090444_1_600x600.JPG"
+            class="player__cover"
+          />
+          <h1 class="title">Sailing</h1>
+          <h4 class="subtitle">AHN YE EUN</h4>
+        </section>
+
+        <section class="player__bar">
+          <div class="player__bar-label">
+            <label for="music-bar">1:00</label>
+            <label for="music-bar">3:04</label>
+          </div>
+          <input type="range" name="music-bar" class="player__music-bar" />
+        </section>
+        <section class="player__btns">
+          <i class="fas fa-sync"></i>
+          <i class="fas fa-step-backward"></i>
+          <i class="fas fa-play"></i>
+          <i class="fas fa-step-forward"></i>
+          <i class="fas fa-random"></i>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
